@@ -24,13 +24,14 @@ notes.post('/', (req, res) => {
         readAndAppend(newNote, './db/db.json');
         res.json(`Note added successfully 🚀`)
     } else {
-        res.error('Error in adding note');
+        res.err('Error in adding note');
     }
 });
 
 // Delete route to delete notes
 notes.delete('/:id', (req, res) => {
     console.info(`${req.method} request recieved to delete note`);
+    // grab the id from the url req
     const id = req.params.id
     console.log(id);
 
@@ -38,7 +39,7 @@ notes.delete('/:id', (req, res) => {
         readAndDelete(id, './db/db.json')
         res.json(`Note deleted successfully 🗑️`)
     } else {
-        res.error('Error in deleting note');
+        res.err('Error in deleting note');
     }
 })
 
