@@ -16,7 +16,7 @@ The Note-Taker application is used to write and save notes. It uses an Express.j
 To use this project, you will need to install express and uuid as dependencies. You can do this by using the following command in the terminal: <br> `$ npm i` 
 
 ## Usage
-This application is deployed using Heroku. You can find a link to the application [here.](#) <br>
+This application is deployed using Heroku. You can find a link to the application [here.](https://frozen-everglades-98205.herokuapp.com/) <br>
 To run the program, use the following command in the terminal:<br> `$ node server.js`<br> OR <br> `$ npm start` <br>
 You will see a message logged that the app is listening and the location where it is listening. You can use that location in your browser to find the home page. <br> 
 <br> <img src="./public/assets/images/screenshot1.png" style="border: 1px solid blue;" width=100% /> <br>
